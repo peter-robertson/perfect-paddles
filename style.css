@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
 /* Layout helpers */
 .container {
   max-width: 960px;
@@ -5,29 +8,86 @@
   border: 1px solid deeppink;
 }
 
+/*Basic Typography*/
 img {
   max-width: 100%;
 }
 
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  color: #646464;
+  line-height: 50px;
+}
+
+p{
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  color: #2d2d2d;
+  line-height: 24px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+a{
+  color: #e2574c;
+}
+
 /* Header */
-.header {}
+.header {
+  background: #000;
+}
 
-.header__logo {}
+.header__logo {
+  margin: 15px auto;
+  display: block;
+  width: 50%;
+}
 
-.header__nav {}
+.header__nav {
+}
 
-.header__nav-list {}
+.header__nav-list {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
 
-.header__nav-list-item {}
+.header__nav-list-item {
+  color: white;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  display: inline;
+  margin: 0 10px 0 10px;
+  text-transform: uppercase;
+}
 
-.header__nav-link {}
+.header__nav-link {
+  color: #fff;
+  text-decoration: none;
+}
 
 
 /* Banner */
-.banner {}
+.banner {
+  background-image: url("images/kayak-bkgd.jpg");
+  background-color: rgba(0,0,0,0.20);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: 60px 0 60px 0;
+}
 
 .banner__title {
   text-align: center;
+
 }
 
 .banner__span {
@@ -35,24 +95,36 @@ img {
 }
 
 .banner__span--enjoy {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  color: #fff;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .banner__span--outdoors {
-  font-size: 60px;
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  color: #fff;
+  font-size: 50px;
 }
 
 .banner__span--water {
-  font-size: 30px;
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  line-height: 26px;
+  color: #fff;
+  font-size: 34px;
+  padding: 0 0 15px 0;
 }
 
 .banner__lead {
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
-  /*max-width: 60%;*/
+  max-width: 80%;
   margin: 0 auto;
   color: white;
+  padding: 5px;
 }
 
 .btn {
@@ -68,3 +140,28 @@ img {
   margin: 50px auto;
   display: block;
 }
+
+.article{
+}
+
+/*Footer*/
+footer{
+  background-color: #242424;
+
+}
+
+.footer__type{
+  color: #fff;
+}
+
+/* tablet */
+/*@media (min-width: 600px) {
+  img {
+    max-width: 40%;
+}*/
+
+/* desktop */
+/*@media (min-width: 1140px) {
+  img {
+    max-width: 100%;
+  }*/
