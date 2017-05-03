@@ -5,7 +5,7 @@
 .container {
   max-width: 960px;
   margin: 0 auto;
-  border: 1px solid deeppink;
+  padding: 0px;
 }
 
 /*Basic Typography*/
@@ -42,9 +42,9 @@ a{
 }
 
 .header__logo {
-  margin: 15px auto;
+  margin: 0 auto;
   display: block;
-  width: 50%;
+  width: 200px;
 }
 
 .header__nav {
@@ -141,27 +141,95 @@ a{
   display: block;
 }
 
-.article{
+.prices{
+  background-color: #ddd;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    background: #333;
+    padding: 20px;
 }
 
 /*Footer*/
 footer{
   background-color: #242424;
-
+  padding: 60px 0 60px 0;
 }
 
 .footer__type{
   color: #fff;
 }
 
-/* tablet */
-/*@media (min-width: 600px) {
+ /*tablet */
+@media (min-width: 600px) {
   img {
     max-width: 40%;
-}*/
+      }
+
+      .header {
+        position: relative;
+        height: 40px;
+      }
+
+      .header__logo {
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        height: 30px;
+      }
+
+      .header__nav {
+        position: absolute;
+        right: 5px;
+        top: 12px;
+      }
+
+      .details{
+        width: 50%;
+        float: left;
+      }
+
+      .prices{
+        background-color: #ddd;
+        width: 50%;
+        float: right;
+      }
+
 
 /* desktop */
-/*@media (min-width: 1140px) {
+@media (min-width: 1100px) {
   img {
     max-width: 100%;
-  }*/
+  }
+
+  .header {
+    position: relative;
+    height: 60px;
+  }
+
+  .header__logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 40px;
+  }
+
+  .header__nav {
+    position: absolute;
+    right: 5px;
+    top: 23px;
+  }
+
+  .details{
+    width: 50%;
+    float: left;
+  }
+
+  .prices{
+    background-color: #ddd;
+    width: 50%;
+    float: right;
+  }
