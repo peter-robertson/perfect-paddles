@@ -38,7 +38,11 @@ a{
 
 /* Header */
 .header {
+  height: 95px;
+  width: 100%;
+  position: fixed;
   background: #000;
+  z-index: 10;
 }
 
 .header__logo {
@@ -170,7 +174,6 @@ footer{
       }
 
       .header {
-        position: relative;
         height: 40px;
       }
 
@@ -206,7 +209,6 @@ footer{
   }
 
   .header {
-    position: relative;
     height: 60px;
   }
 
