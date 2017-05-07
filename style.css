@@ -5,7 +5,7 @@
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0px;
+  border: 1px #ffcccc;
 }
 
 /*Basic Typography*/
@@ -20,6 +20,7 @@ h2 {
   font-weight: 400;
   color: #646464;
   line-height: 50px;
+  margin: 30px 0 30px 0;
 }
 
 p{
@@ -36,28 +37,53 @@ a{
   color: #e2574c;
 }
 
+table {
+  border: 1px solid #c8c8c8;
+  width: 100%;
+}
+
+th, td{
+  padding: 10px;
+  border: 1px solid #c8c8c8;
+  text-align: center;
+}
+
+th{
+  background: #e6e6e6;
+}
+
+.table__left{
+  text-align: left;
+}
+
 /* Header */
 .header {
-  height: 95px;
+  position:fixed;
   width: 100%;
-  position: fixed;
   background: #000;
   z-index: 10;
 }
 
-.header__logo {
+.header__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 96px;
+  max-width: 960px;
   margin: 0 auto;
-  display: block;
+}
+
+.header__logo {
   width: 200px;
+  padding: 5px;
 }
 
 .header__nav {
 }
 
 .header__nav-list {
-  text-align: center;
   list-style-type: none;
-  padding: 0;
 }
 
 .header__nav-list-item {
@@ -74,9 +100,14 @@ a{
   text-decoration: none;
 }
 
+.scroll__content{
+  top: 96px;
+  position: relative;
+}
 
 /* Banner */
 .banner {
+  top: 65px;
   background-image: url("images/kayak-bkgd.jpg");
   background-color: rgba(0,0,0,0.20);
   background-repeat: no-repeat;
@@ -145,93 +176,89 @@ a{
   display: block;
 }
 
-.prices{
-  background-color: #ddd;
+.about{
+  padding: 7px;
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-    background: #333;
-    padding: 20px;
+.rentals{
+  padding: 7px;
+}
+
+.rentals__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 330px;
+  padding: 7px;
+}
+
+.prices{
+  width: 100%;
 }
 
 /*Footer*/
 footer{
   background-color: #242424;
-  padding: 60px 0 60px 0;
+  padding: 60px 7px 60px 7px;
+  position: relative;
+  top: 96px;
 }
 
 .footer__type{
   color: #fff;
 }
 
+.footer__nav-list{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footer__nav-list-item{
+  display: inline;
+  margin: 0 5px 0 5px;
+}
+
  /*tablet */
 @media (min-width: 600px) {
+
   img {
-    max-width: 40%;
-      }
-
-      .header {
-        height: 40px;
-      }
-
-      .header__logo {
-        position: absolute;
-        top: 5px;
-        left: 0px;
-        height: 30px;
-      }
-
-      .header__nav {
-        position: absolute;
-        right: 5px;
-        top: 12px;
-      }
-
-      .details{
-        width: 50%;
-        float: left;
-      }
-
-      .prices{
-        background-color: #ddd;
-        width: 50%;
-        float: right;
-      }
-
-
-/* desktop */
-@media (min-width: 1100px) {
-  img {
-    max-width: 100%;
+    max-width: 33%;
   }
 
-  .header {
-    height: 60px;
+  .header__flex {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 52px;
   }
 
-  .header__logo {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    height: 40px;
-  }
-
-  .header__nav {
-    position: absolute;
-    right: 5px;
-    top: 23px;
+  .scroll__content{
+    top: 52px;
+    position: relative;
   }
 
   .details{
     width: 50%;
-    float: left;
   }
 
   .prices{
-    background-color: #ddd;
     width: 50%;
-    float: right;
+  }
+
+  .rentals__flex {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+  }
+
+/* desktop */
+@media (min-width: 1100px) {
+
+  .header__flex {
+    height: 60px;
+  }
+
+  .scroll__content{
+    top: 60px;
+    position: relative;
   }
