@@ -5,12 +5,21 @@
 .container {
   max-width: 960px;
   margin: 0 auto;
-  border: 1px #ffcccc;
 }
 
 /*Basic Typography*/
 img {
   max-width: 100%;
+}
+
+body{
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d2d2d;
+}
+
+h1{
+  text-align: center;
 }
 
 h2 {
@@ -20,7 +29,7 @@ h2 {
   font-weight: 400;
   color: #646464;
   line-height: 50px;
-  margin: 30px 0 30px 0;
+  margin: 50px 0 30px 0;
 }
 
 p{
@@ -29,8 +38,7 @@ p{
   color: #2d2d2d;
   line-height: 24px;
   text-align: center;
-  display: block;
-  margin: 0 auto;
+  padding: 14px 0 14px 0;
 }
 
 a{
@@ -52,26 +60,26 @@ th{
   background: #e6e6e6;
 }
 
-.table__left{
+.left{
   text-align: left;
 }
 
 /* Header */
-.header {
-  position:fixed;
+header {
+  margin: 0 auto;
+  position: fixed;
   width: 100%;
   background: #000;
   z-index: 10;
 }
 
-.header__flex {
+.header__flex{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 96px;
+  height: 95px;
   max-width: 960px;
-  margin: 0 auto;
 }
 
 .header__logo {
@@ -91,7 +99,7 @@ th{
   font-family: 'Karla', sans-serif;
   font-weight: 400;
   display: inline;
-  margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px;
   text-transform: uppercase;
 }
 
@@ -100,22 +108,19 @@ th{
   text-decoration: none;
 }
 
-.scroll__content{
-  top: 96px;
-  position: relative;
-}
-
 /* Banner */
 .banner {
-  top: 65px;
-  background-image: url("images/kayak-bkgd.jpg");
-  background-color: rgba(0,0,0,0.20);
+  position: relative;
+  top: 95px;
+  background-image: linear-gradient(
+    to top,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(51, 51, 51, 0.25) 100%
+      ),
+  url("images/kayak-bkgd.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
   background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
-  background-repeat: no-repeat;
+  background-position: top center;
   margin: 0 auto;
   padding: 60px 0 60px 0;
 }
@@ -162,8 +167,15 @@ th{
   padding: 5px;
 }
 
+main{
+  padding: 7px;
+  position: relative;
+  top: 95px;
+  margin: 0 auto;
+}
+
 .btn {
-  background-color: #df5850;
+  background-color: #e2574c;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
@@ -174,25 +186,36 @@ th{
   border: none;
   margin: 50px auto;
   display: block;
+
 }
 
-.about{
-  padding: 7px;
+.photo__art{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
-.rentals{
-  padding: 7px;
+.photo__art img {
+  margin: 5px 0;
+  box-shadow: 1px 1px 1px 1px #ccc;
 }
 
 .rentals__flex {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 330px;
-  padding: 7px;
+}
+
+.details p{
+  text-align: left;
 }
 
 .prices{
+  width: 100%;
+}
+
+.map{
   width: 100%;
 }
 
@@ -205,7 +228,13 @@ footer{
 }
 
 .footer__type{
+  margin: 0 auto;
   color: #fff;
+  max-width: 300px;
+}
+
+.footer__type-grey{
+  color: #999;
 }
 
 .footer__nav-list{
@@ -216,49 +245,61 @@ footer{
 
 .footer__nav-list-item{
   display: inline;
+  display: none;
   margin: 0 5px 0 5px;
 }
 
  /*tablet */
 @media (min-width: 600px) {
 
-  img {
-    max-width: 33%;
-  }
-
-  .header__flex {
+.header__flex {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
     height: 52px;
   }
 
-  .scroll__content{
-    top: 52px;
-    position: relative;
+.header__logo{
+    display: flex;
+    justify-content: left;
   }
 
-  .details{
-    width: 50%;
-  }
+.banner{
+  top: 52px;
+}
 
-  .prices{
-    width: 50%;
-  }
+main{
+  top: 52px;
+}
 
-  .rentals__flex {
-    flex-direction: row;
-    justify-content: space-between;
-    height: 200px;
-  }
+footer{
+  top: 52px;
+}
+
+.photo__art img {
+  width: 32.5%;
+  margin: 5px 1px;
+}
+
+.details{
+  width: 50%;
+}
+
+.prices{
+  width: 50%;
+}
+
+.rentals__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+}
 
 /* desktop */
-@media (min-width: 1100px) {
-
+@media (min-width: 1140px) {
   .header__flex {
     height: 60px;
   }
-
-  .scroll__content{
-    top: 60px;
-    position: relative;
-  }
+}
