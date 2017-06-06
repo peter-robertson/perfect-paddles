@@ -1,0 +1,407 @@
+/* Layout helpers */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*Basic Typography*/
+img {
+  max-width: 100%;
+}
+
+body{
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2d2d2d;
+}
+
+h1{
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  color: #646464;
+  line-height: 50px;
+  margin: 50px 0 50px 0;
+}
+
+p{
+  color: #2d2d2d;
+  line-height: 28px;
+  text-align: center;
+  padding: 0 0 30px 0;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #e2574c;
+}
+
+table {
+  border: 1px solid #c8c8c8;
+  width: 100%;
+}
+
+tr:hover {
+  background-color: #fbf6d9;
+}
+
+th, td{
+  padding: 15px 10px;
+  border: 1px solid #c8c8c8;
+  text-align: center;
+}
+
+th{
+  background: #e6e6e6;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+}
+
+.left{
+  text-align: left;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  margin: 0 auto;
+  width: 100%;
+  background: #000;
+}
+
+.header__flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 95px;
+  max-width: 960px;
+}
+
+.header__logo {
+  width: 200px;
+  padding: 5px;
+}
+
+.header__nav-list {
+  list-style-type: none;
+  margin: 5px;
+}
+
+.header__nav-list-item {
+  color: white;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  display: inline;
+  padding: 0 15px 0 15px;
+  text-transform: uppercase;
+}
+
+.header__nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Banner */
+.banner {
+  background-image: linear-gradient(
+    to top,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(51, 51, 51, 0.25) 100%
+      ),
+  url("../images/kayak-bkgd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
+  height: 530px;
+}
+
+.banner__span {
+  display: block;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #999;
+}
+
+.banner__span--enjoy {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-top: 87px;
+}
+
+.banner__span--outdoors {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  color: #fff;
+  font-size: 52px;
+}
+
+.banner__span--water {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  line-height: 36px;
+  color: #fff;
+  font-size: 34px;
+  padding-bottom: 20px;
+}
+
+.banner__lead {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  width: 70%;
+  color: white;
+  padding: 5px 10px;
+  line-height: 22px;
+}
+
+main{
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #e2574c;
+  color: white;
+  text-transform: uppercase;
+  padding: 16px 18px 16px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  margin: 30px auto;
+  display: block;
+}
+
+.btn:hover{
+  background-color: #b64036;
+}
+
+.photo__art{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.photo__art img {
+  margin: 5px 0;
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.rentals__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.prices{
+  width: 100%;
+}
+
+.details a{
+  color: #e2574c;
+  text-decoration: underline;
+}
+
+.details p{
+  text-align: left;
+  max-width: 85%;
+}
+
+.map{
+  width: 100%;
+  margin-bottom: 40px;
+  height: 30vh;
+}
+
+/*Footer*/
+footer{
+  background-color: #242424;
+  padding: 60px 10px 60px 10px;
+}
+
+.footer__flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer__type{
+  color: #fff;
+  max-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.footer__type-grey{
+  color: #999;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.footer__ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footer__li{
+  margin: 0 5px;
+}
+
+.footer__ui-type{
+  display: none;
+}
+
+ /*tablet */
+@media (min-width: 600px) {
+
+.header__flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 52px;
+  }
+
+.banner{
+  height: 575px;
+}
+
+.banner__span {
+  margin-bottom: 40px;
+}
+
+.banner__span--enjoy {
+  padding-top: 90px;
+  font-size: 25px;
+}
+
+.banner__span--water{
+  font-size: 40px;
+  line-height: 10px;
+  padding-bottom: 10px;
+}
+
+.banner__lead{
+  text-align: center;
+  margin: 0 auto;
+  width: auto;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+.banner__span--outdoors {
+  font-size: 80px;
+}
+
+main{
+  top: 52px;
+}
+
+.photo__art img {
+  width: 32.5%;
+  margin: 5px 1px;
+}
+
+.details{
+  width: 50%;
+}
+
+.prices{
+  width: 50%;
+}
+
+.rentals__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer{
+  top: 52px;
+}
+
+.footer__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__type{
+  text-align: left;
+}
+
+.footer__type-grey{
+  text-align: left;
+}
+
+footer li{
+  margin: 9px 0;
+}
+
+.footer__ul{
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 50px;
+}
+
+.footer__ui-type{
+  display: inline;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
+}
+
+/* desktop */
+@media (min-width: 1140px) {
+
+.header__flex {
+  height: 60px;
+}
+
+.banner{
+  height: 565px;
+}
+
+.banner__span--enjoy{
+  padding-top: 70px;
+  font-size: 25px;
+}
+
+.banner__span--outdoors {
+  font-size: 110px;
+}
+
+.about p{
+  max-width: 710px;
+  margin: 0 auto;
+}
+
+.details p{
+  max-width: 95%;
+}
+
+}
